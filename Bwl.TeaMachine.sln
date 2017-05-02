@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+#
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bwl.TeaMachine.App", "Bwl.TeaMachine.App\Bwl.TeaMachine.App.vbproj", "{8CBD8268-8156-4FE0-8E52-42DF7157CA6A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bwl.TeaMachine", "Bwl.TeaMachine\Bwl.TeaMachine.vbproj", "{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}"
+EndProject
+Global
+GlobalSection(SolutionConfigurationPlatforms) = preSolution
+Debug|Any CPU = Debug|Any CPU
+Release|Any CPU = Release|Any CPU
+EndGlobalSection
+GlobalSection(SolutionProperties) = preSolution
+HideSolutionNode = False
+EndGlobalSection
+EndGlobal
