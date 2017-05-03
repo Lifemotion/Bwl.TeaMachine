@@ -1,18 +1,27 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-#
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bwl.TeaMachine.App", "Bwl.TeaMachine.App\Bwl.TeaMachine.App.vbproj", "{8CBD8268-8156-4FE0-8E52-42DF7157CA6A}"
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Bwl.TeaMachine", "Bwl.TeaMachine\Bwl.TeaMachine.vbproj", "{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}"
 EndProject
 Global
-GlobalSection(SolutionConfigurationPlatforms) = preSolution
-Debug|Any CPU = Debug|Any CPU
-Release|Any CPU = Release|Any CPU
-EndGlobalSection
-GlobalSection(SolutionProperties) = preSolution
-HideSolutionNode = False
-EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CBD8268-8156-4FE0-8E52-42DF7157CA6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CBD8268-8156-4FE0-8E52-42DF7157CA6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CBD8268-8156-4FE0-8E52-42DF7157CA6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CBD8268-8156-4FE0-8E52-42DF7157CA6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 EndGlobal

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-<ProjectGuid>{2DCD89B2-4EA5-4C81-94CD-9DEDF18A9C72}</ProjectGuid>
+    <ProjectGuid>{2DCD89B2-4EA5-4C81-94CD-9DEDF18A9C72}</ProjectGuid>
     <avrdevice>ATmega324PA</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -20,10 +20,10 @@
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
     <ProgFlashFromRam>true</ProgFlashFromRam>
-    <RamSnippetAddress />
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
     <UncachedRange />
     <preserveEEPROM>true</preserveEEPROM>
-    <OverrideVtorValue />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
     <BootSegment>2</BootSegment>
     <eraseonlaunchrule>0</eraseonlaunchrule>
     <AsfFrameworkConfig>
@@ -38,6 +38,22 @@
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.atmelice</avrtool>
+    <avrtoolserialnumber>J41800006313</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1E9511</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_atmelice>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.atmelice</ToolType>
+      <ToolNumber>J41800006313</ToolNumber>
+      <ToolName>Atmel-ICE</ToolName>
+    </com_atmel_avrdbg_tool_atmelice>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -124,37 +140,39 @@
     <Compile Include="board\board.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="board\HAL_definition.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include = "libs\bwl_uart.c">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_uart.h">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_simplserial.c">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_simplserial.h">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_simplserial_ext.h">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_strings.c">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_strings.h">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_tools.c">
-<SubType>compile</SubType>
-</Compile>
-<Compile Include = "libs\bwl_tools.h">
-<SubType>compile</SubType>
-</Compile>
-
+    <Compile Include="libs\bwl_uart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_uart.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_simplserial.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_simplserial.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_simplserial_ext.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_strings.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_strings.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_tools.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="libs\bwl_tools.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="libs" />

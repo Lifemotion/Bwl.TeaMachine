@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-<ProjectGuid>{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}</ProjectGuid>
+    <ProjectGuid>{ACB59DC8-5955-49E6-B13F-D8A3FB7863B2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Bwl.TeaMachine</RootNamespace>
     <AssemblyName>Bwl.TeaMachine</AssemblyName>
@@ -47,37 +47,36 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
-    <Reference Include = "Bwl.Framework" >
-<HintPath>..\refs\bwl-framework\Bwl.Framework.dll</HintPath>
-</Reference>
-<Reference Include = "bwl.Network.ClientServer" >
-<HintPath>..\refs\bwl-framework\bwl.Network.ClientServer.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Hardware.Serial" >
-<HintPath>..\refs\bwl-hardware-serial\Bwl.Hardware.Serial.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Hardware.Serial.FTDIDevice" >
-<HintPath>..\refs\bwl-hardware-serial\Bwl.Hardware.Serial.FTDIDevice.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Hardware.SimplSerial" >
-<HintPath>..\refs\bwl-hardware-serial\Bwl.Hardware.SimplSerial.dll</HintPath>
-</Reference>
-<Reference Include = "FTD2XX_NET" >
-<HintPath>..\refs\bwl-hardware-serial\FTD2XX_NET.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Imaging" >
-<HintPath>..\refs\bwl-imaging\Bwl.Imaging.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Imaging.Unsafe" >
-<HintPath>..\refs\bwl-imaging\Bwl.Imaging.Unsafe.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Imaging.WinForms" >
-<HintPath>..\refs\bwl-imaging\Bwl.Imaging.WinForms.dll</HintPath>
-</Reference>
-<Reference Include = "Bwl.Video" >
-<HintPath>..\refs\bwl-video\Bwl.Video.dll</HintPath>
-</Reference>
-
+    <Reference Include="Bwl.Framework">
+      <HintPath>..\refs\bwl-framework\Bwl.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="bwl.Network.ClientServer">
+      <HintPath>..\refs\bwl-framework\bwl.Network.ClientServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Hardware.Serial">
+      <HintPath>..\refs\bwl-hardware-serial\Bwl.Hardware.Serial.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Hardware.Serial.FTDIDevice">
+      <HintPath>..\refs\bwl-hardware-serial\Bwl.Hardware.Serial.FTDIDevice.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Hardware.SimplSerial">
+      <HintPath>..\refs\bwl-hardware-serial\Bwl.Hardware.SimplSerial.dll</HintPath>
+    </Reference>
+    <Reference Include="FTD2XX_NET">
+      <HintPath>..\refs\bwl-hardware-serial\FTD2XX_NET.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Imaging">
+      <HintPath>..\refs\bwl-imaging\Bwl.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Imaging.Unsafe">
+      <HintPath>..\refs\bwl-imaging\Bwl.Imaging.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Imaging.WinForms">
+      <HintPath>..\refs\bwl-imaging\Bwl.Imaging.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Bwl.Video">
+      <HintPath>..\refs\bwl-video\Bwl.Video.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -90,7 +89,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lib1.vb" />
+    <Compile Include="TeaMachine.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
